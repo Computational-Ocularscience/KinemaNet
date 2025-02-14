@@ -17,11 +17,16 @@ covariance model to generate spatial random fields.
 
 ### Sample Demo
 
-<p align="center">
-   <img src="Speckle/sample/sample_seq.gif" width="210" height="210" alt="Demo GIF">
-   <img src="Speckle/sample/flow001.png" width="550" height="275" alt="Demo Image">
-</p>
-
+<div align="center">
+    <figure>
+        <img src="Speckle/sample/sample_seq.gif" width="210" height="210" alt="Demo GIF">
+        <figcaption>Generated Speckle Pattern Sequence</figcaption>
+    </figure>
+    <figure>
+        <img src="Speckle/sample/flow001.png" width="550" height="275" alt="Demo Image">
+        <figcaption>Computed Optical Flow</figcaption>
+    </figure>
+</div>
 ### Run Speckle Generator
 
 `--pattern` represents a path where 3D image volumes in `.tiff` format and/or sub-directories containing z-slices of a given volume in a sorted order are located.
