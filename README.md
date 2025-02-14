@@ -18,7 +18,7 @@ covariance model to generate spatial random fields.
 ### Sample Demo
 
 <p align="center">
-   <img src="Speckle/sample/sample_seq.gif" width="512" height="512" alt="Demo GIF">
+   <img src="Speckle/sample/sample_seq.gif" width="200" height="200" alt="Demo GIF">
    <img src="Speckle/sample/flow001.png" width="512" height="512" alt="Demo Image">
 </p>
 
