@@ -6,31 +6,9 @@ Fisseha A. Ferede, Madhusudhanan Balasubramanian<br/>
 
 <img src="Elastonet_architecture.png">
 
-## Demo
-
-<p style="display: flex; justify-content: center; gap: 20px; flex-direction: row; flex-wrap: nowrap; align-items: center; min-width: 700px;">
-   <div style="text-align: center; width: 220px;">
-      <img src="https://github.com/Fisseha21/Z-upscaling/blob/main/demos/Input_downsampledFIB25_vol.gif" width="200" height="200" alt="Input Downsampled Volume">
-      <div style="margin-top: 8px;">Input Downsampled Volume</div>
-   </div>
-
-   <div style="text-align: center; width: 220px;">
-      <img src="https://github.com/Fisseha21/Z-upscaling/blob/main/demos/zUpx8_FIB25_vol.gif" width="200" height="200" alt="Upscaled Volume">
-      <div style="margin-top: 8px;">Upscaled Volume (Z × 8)</div>
-   </div>
-
-   <div style="text-align: center; width: 220px;">
-      <img src="https://github.com/Fisseha21/Z-upscaling/blob/main/demos/GT_FIB25_vol.gif" width="200" height="200" alt="Ground Truth Volume">
-      <div style="margin-top: 8px;">Ground Truth Volume</div>
-   </div>
-</p>
 
 
-
-
-
-
-## Evaluation
+## Speckle Dataset Generation
 
 `--pattern` represents a path where 3D image volumes in `.tiff` format and/or sub-directories containing z-slices of a given volume in a sorted order are located.
 `--model_path` a path where the model used for evaluation is located (Download pretrained models [Saved models](https://drive.google.com/drive/folders/1vFvyuP4FdU8A0_Y0iA7CHSvlAFPH6StX?usp=sharing)).
@@ -55,10 +33,13 @@ python3 /Z-upscaling-main/eval/interpolator_cli.py \
 
 If you find this work useful please cite:
 ```
-@article{ferede2024z,
-  title={Z-upscaling: Optical Flow Guided Frame Interpolation for Isotropic Reconstruction of 3D EM Volumes},
-  author={Ferede, Fisseha A and Khalighifar, Ali and John, Jaison and Venkataraman, Krishnan and Khairy, Khaled},
-  journal={arXiv preprint arXiv:2410.07043},
-  year={2024}
+@article{ferede2023sstm,
+  title={SSTM: Spatiotemporal recurrent transformers for multi-frame optical flow estimation},
+  author={Ferede, Fisseha Admasu and Balasubramanian, Madhusudhanan},
+  journal={Neurocomputing},
+  volume={558},
+  pages={126705},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
