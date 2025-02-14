@@ -1,4 +1,4 @@
-# ELASTONET
+﻿# ELASTONET
 This repository contains the source code for our paper:
 
 [ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection](https://arxiv.org/pdf/2304.14418)<br/>
@@ -14,6 +14,15 @@ We generate multi-frame synthetic speckle pattern image sequences and ground-tru
 
 We then backward warp each unique pattern with smooth and randomly generated spatial random deformation fields to generate deforming sequences. The random deformation fields are generated using [GSTools](https://gmd.copernicus.org/articles/15/3161/2022/), a library which uses
 covariance model to generate spatial random fields. 
+
+### Sample Demo
+
+<p align="center">
+   <img src="https://github.com/Fisseha21/Speckle-Pattern-Flow-Generator/blob/main/Samples/Speckle_sequence.gif" width="200" height="200" alt="Demo GIF">
+   <img src="https://github.com/Fisseha21/Speckle-Pattern-Flow-Generator/blob/main/Samples/Speckle_sequence_flow.gif" width="500" height="250" alt="Demo GIF">
+</p>
+
+### Run Speckle Generator
 
 `--pattern` represents a path where 3D image volumes in `.tiff` format and/or sub-directories containing z-slices of a given volume in a sorted order are located.
 `--model_path` a path where the model used for evaluation is located (Download pretrained models [Saved models](https://drive.google.com/drive/folders/1vFvyuP4FdU8A0_Y0iA7CHSvlAFPH6StX?usp=sharing)).
@@ -33,6 +42,25 @@ python3 /Z-upscaling-main/eval/interpolator_cli.py \
    --remove_sliced_volumes "False"
 
 ```
+
+### Output Format
+The output files which includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations, heatmap of the `u` and `v` flows.
+
+```
+├── <output_path>/
+│   ├── Sequences├──Seq1├──frame0001.png
+│   │            │              .
+│   │            │      ├──frame000n.png     
+│   │            │ 
+│   ├── Flow     ├──Seq1├──flow0001.flo
+│   │            │              .
+│   │            │      ├──frame000n-1.flo
+│   │            │     
+│   ├── Flow_vis ├──Seq1├──flow0001.png
+│   │            │              .
+│   │            │      ├──frame000n-1.png
+```
+
 
 ## Cite
 
