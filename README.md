@@ -18,8 +18,8 @@ covariance model to generate spatial random fields.
 ### Sample Demo
 
 <p align="center">
-   <img src="https://github.com/Fisseha21/Speckle-Pattern-Flow-Generator/blob/main/Samples/Speckle_sequence.gif" width="200" height="200" alt="Demo GIF">
-   <img src="https://github.com/Fisseha21/Speckle-Pattern-Flow-Generator/blob/main/Samples/Speckle_sequence_flow.gif" width="500" height="250" alt="Demo GIF">
+   <img src="https://github.com/Computational-Ocularscience/ElastoNet/tree/main/Speckle/sample/sample_seq.gif" width="200" height="200" alt="Demo GIF">
+   <img src="https://github.com/Computational-Ocularscience/ElastoNet/tree/main/Speckle/sample/flow001.png" width="500" height="250" alt="Demo GIF">
 </p>
 
 ### Run Speckle Generator
