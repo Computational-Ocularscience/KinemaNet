@@ -4,6 +4,8 @@ This repository contains the source code for our paper:
 [ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection](https://arxiv.org/pdf/2304.14418)<br/>
 Fisseha A. Ferede, Madhusudhanan Balasubramanian<br/>
 
+## Architecture
+
 <img src="Elastonet_architecture.png">
 
 
