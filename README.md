@@ -39,6 +39,7 @@ python synthetic_data_generator.py
 
 ### PyPI installation
 We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). Alternatively, this library can be installed and used as follows:
+
 Installation
 ```
 conda create -n specklegen_env python=3.8
