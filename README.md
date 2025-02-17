@@ -54,7 +54,7 @@ scales = (5, 7)  #max flow magnitudes of u and v fields, respectively
 
 # Call function
 data_generator(output_path, seq_number, seq_length, dimensions, scales)
-```python
+
 
 ```Shell
 python3 /Z-upscaling-main/eval/interpolator_cli.py \
