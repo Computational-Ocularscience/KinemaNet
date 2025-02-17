@@ -26,15 +26,19 @@ covariance model to generate spatial random fields.
 
 ### Run Speckle Generator
 
-`--pattern` represents a path where 3D image volumes in `.tiff` format and/or sub-directories containing z-slices of a given volume in a sorted order are located.
-`--model_path` a path where the model used for evaluation is located (Download pretrained models [Saved models](https://drive.google.com/drive/folders/1vFvyuP4FdU8A0_Y0iA7CHSvlAFPH6StX?usp=sharing)).
-`--outputfile` a path where the upsampled volumes will be saved. 
-`--times_to_interpolate` isotropizing factor by which the volume input is upscaled. If it's in `2^n` order, it invokes recursive spatial interpolation to achieve the target number of frames, if not it will invoke the interpolation to the nearest `2^n` order and apply bicubic interpolation to upsample or downsample.
-`--output_volume` if true, isotropized volume will be saved in `.tiff` format.
-`--remove_sliced_volumes` if true, removes the intermediate 2D slices generated from a 3D `.tiff` volume input.
+There are four arguments to be specified by the user. `--output_path` defines the directory where generated image sequences, ground-truth flows and flow vizualizations will be saved.  `--seq_number` and `--seq_length` represent the number of random speckle pattern sequences to generate and the number of frames per each sequence, respectively.
+Lastly, the `--dimensions` argument specifies the height and width of the output speckle patterns. 
+```
+python synthetic_data_generator.py
+   --output_path=<output_path>
+   --seq_number=5
+   --seq_length=7
+   --dimensions 512 512
+   --scales 5 7
+```
 
 ### PyPI installation
-We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). This library can be installed and used as follows:
+We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). Alternatively, this library can be installed and used as follows:
 Installation
 ```
 conda create -n specklegen_env python=3.8
