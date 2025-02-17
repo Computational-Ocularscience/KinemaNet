@@ -1,0 +1,9 @@
+README.md
+setup.py
+specklegen/__init__.py
+specklegen/synthetic_data_generator.py
+specklegen.egg-info/PKG-INFO
+specklegen.egg-info/SOURCES.txt
+specklegen.egg-info/dependency_links.txt
+specklegen.egg-info/requires.txt
+specklegen.egg-info/top_level.txt

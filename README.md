@@ -33,6 +33,28 @@ covariance model to generate spatial random fields.
 `--output_volume` if true, isotropized volume will be saved in `.tiff` format.
 `--remove_sliced_volumes` if true, removes the intermediate 2D slices generated from a 3D `.tiff` volume input.
 
+### PyPI installation
+We published this speckle data generator
+
+```
+conda create -n specklegen_env python=3.8
+pip install specklegen
+```
+Usage
+
+```python
+from specklegen.synthetic_data_generator import data_generator
+
+# Manually define arguments
+output_path = "./pipoutput" #output path
+seq_number = 10 #number of sequences 
+seq_length = 3 #number of frames per sequence
+dimensions = (256, 256)  #output flow and sequence dimensions 
+scales = (5, 7)  #max flow magnitudes of u and v fields, respectively
+
+# Call function
+data_generator(output_path, seq_number, seq_length, dimensions, scales)
+```python
 
 ```Shell
 python3 /Z-upscaling-main/eval/interpolator_cli.py \
@@ -45,6 +67,7 @@ python3 /Z-upscaling-main/eval/interpolator_cli.py \
 
 ```
 
+### PyPI Installation
 ### Output Format
 The output files which includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations, heatmap of the `u` and `v` flows.
 
