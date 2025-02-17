@@ -161,10 +161,11 @@ def random_deformation_pattern(dimensions, scales):
     """
     # List of available generators
     generator_types = ['Fourier', 'RandMeth', 'IncomprRandMeth', 'VectorField', 'VelocityField']
+    #generator_types = ['Fourier', 'IncomprRandMeth', 'VectorField', 'VelocityField']
     
     # Randomly select a generator type
     generator_type = np.random.choice(generator_types)
-    print(generator_type)
+    #print(generator_type)
 
     # Randomly select parameters
     length_scale = np.random.uniform(100, 300)  # Length scale between 100 and 300
@@ -188,13 +189,29 @@ def random_deformation_pattern(dimensions, scales):
         # For these generators, we typically do not set mode_no
         srf = gs.SRF(
             model,
-            generator=generator_type,
-            period=period
+            generator=generator_type
         )
         # Generate the vector field, which will have shape (2, height, width)
         vector_field = srf((x, y), mesh_type="structured")
         u_field = vector_field[0]  # Extract the u component
         v_field = vector_field[1]  # Extract the v component
+    elif generator_type == 'RandMeth':
+        # Fourier generator can use mode_no
+        mode_no = np.random.randint(16, 65) * 2  # Even number between 32 and 128
+
+        srf_u = gs.SRF(
+            model,
+            generator=generator_type,
+            mode_no=mode_no
+        )
+        u_field = srf_u((x, y), mesh_type="structured")
+
+        srf_v = gs.SRF(
+            model,
+            generator=generator_type,
+            mode_no=mode_no
+        )
+        v_field = srf_v((x, y), mesh_type="structured")
     else:
         # Fourier generator can use mode_no
         mode_no = np.random.randint(16, 65) * 2  # Even number between 32 and 128
@@ -286,7 +303,7 @@ def data_generator(output_path, number_of_sequences, seq_length, output_dimensio
         if not os.path.exists(flow_vis_output_dir):
             os.makedirs(flow_vis_output_dir)
         
-        print(image_output_dir)
+        #print(image_output_dir)
         
         
         cv2.imwrite(os.path.join(image_output_dir, 'frame%03d.png' % 1), image1[h1:h2, w1:w2]) #save image1 (speckle pattern)
