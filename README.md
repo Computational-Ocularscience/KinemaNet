@@ -34,8 +34,8 @@ covariance model to generate spatial random fields.
 `--remove_sliced_volumes` if true, removes the intermediate 2D slices generated from a 3D `.tiff` volume input.
 
 ### PyPI installation
-We published this speckle data generator
-
+We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). This library can be installed and used as follows:
+Installation
 ```
 conda create -n specklegen_env python=3.8
 pip install specklegen
