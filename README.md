@@ -50,7 +50,7 @@ Usage
 ```python
 from specklegen.synthetic_data_generator import data_generator
 
-# Manually define arguments
+# Define arguments
 output_path = "./output" #output path
 seq_number = 10 #number of sequences 
 seq_length = 3 #number of frames per sequence
@@ -60,20 +60,7 @@ scales = (5, 7)  #max flow magnitudes of u and v fields, respectively
 # Call function
 data_generator(output_path, seq_number, seq_length, dimensions, scales)
 ```
-This is a different section
 
-```Shell
-python3 /Z-upscaling-main/eval/interpolator_cli.py \
-   --pattern "/Z-upscaling-main/Demo/*" \
-   --model_path /Z-upscaling-main/ModelPaths/test_run_ft_em_/saved_model_2M \
-   --outputfile /Z-upscaling-main/Demo_out \
-   --times_to_interpolate 8 \
-   --output_volume "True" \
-   --remove_sliced_volumes "False"
-
-```
-
-### PyPI Installation
 ### Output Format
 The output files which includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations, heatmap of the `u` and `v` flows.
 
