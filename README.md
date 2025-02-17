@@ -46,7 +46,7 @@ Usage
 from specklegen.synthetic_data_generator import data_generator
 
 # Manually define arguments
-output_path = "./pipoutput" #output path
+output_path = "./output" #output path
 seq_number = 10 #number of sequences 
 seq_length = 3 #number of frames per sequence
 dimensions = (512, 512)  #output flow and sequence dimensions 
