@@ -10,8 +10,6 @@ import numpy as np
 import cv2
 import random
 import argparse
-#import os.path as osp
-#from glob import glob
 import os
 import matplotlib.pyplot as plt
 import gstools as gs
