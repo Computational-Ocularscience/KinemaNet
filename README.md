@@ -49,7 +49,7 @@ from specklegen.synthetic_data_generator import data_generator
 output_path = "./pipoutput" #output path
 seq_number = 10 #number of sequences 
 seq_length = 3 #number of frames per sequence
-dimensions = (256, 256)  #output flow and sequence dimensions 
+dimensions = (512, 512)  #output flow and sequence dimensions 
 scales = (5, 7)  #max flow magnitudes of u and v fields, respectively
 
 # Call function
