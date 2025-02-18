@@ -9,10 +9,10 @@ covariance model to generate spatial random fields.
 
 ## Sample Demo
 
-<p align="center">
-   <img src="specklegen/sample/frame001.png" width="200" height="200" alt="Demo Image">
-   <img src="specklegen/sample/flow001.png" width="520" height="260" alt="Demo Image">
-</p>
+<h1 align="center">
+<img src="specklegen/sample/frame001.png"  width="200" height="200">
+<img src="specklegen/sample/flow001.png"  width="520" height="260">
+</h1><br>
 
 ## Run Speckle Generator
 
@@ -21,7 +21,7 @@ Lastly, the `--dimensions` argument specifies the height and width of the output
 
 
 ## PyPI installation
-We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). Alternatively, this library can be installed and used as follows:
+We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.2/). Alternatively, this library can be installed and used as follows:
 
 Installation
 ```
