@@ -9,7 +9,7 @@ covariance model to generate spatial random fields.
 ## Sample Demo
 
 <h1 align="center">
-<img src="frame001.png"  width="200" height="200">
+<img src="sample_seq.gif"  width="200" height="200">
 <img src="flow001.png"  width="520" height="260">
 </h1><br>
 
