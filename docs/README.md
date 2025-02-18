@@ -20,12 +20,12 @@ Lastly, the `--dimensions` argument specifies the height and width of the output
 
 
 ## PyPI installation
-We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.2/). Alternatively, this library can be installed and used as follows:
+This speckle dataset generator can be installed and used as follows: 
 
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen==0.1.1
+pip install specklegen==0.1.4
 ```
 Usage
 
@@ -44,8 +44,7 @@ data_generator(output_path, seq_number, seq_length, dimensions, scales)
 ```
 
 ## Output Format
-The output files includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations file, heatmap of the `u` and `v` flows.
-
+The output files include synthetic speckle pattern image sequences, `.flo` ground truth deformation fields containing the `u` and `v` components of the deformation, as well as flow visualization files (heatmaps of the `u` and `v` flows).
 ```
 ├── <output_path>/
 │   ├── Sequences├──Seq1├──frame0001.png
