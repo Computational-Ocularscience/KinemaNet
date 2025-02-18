@@ -25,7 +25,7 @@ We published this speckle data generator package on PyPI [Specklegen](https://py
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen==0.1.2
+pip install specklegen==0.1.1
 ```
 Usage
 
