@@ -1,6 +1,4 @@
 ﻿# Speckle Dataset Generation
-This repository contains the source code for our paper:
-
 [Github page](https://github.com/Computational-Ocularscience/ElastoNet)<br/>
 
 ## Dataset Generation
@@ -12,8 +10,8 @@ covariance model to generate spatial random fields.
 ## Sample Demo
 
 <p align="center">
-   <img src="specklegen/sample/sample_seq.gif" width="225" height="225" alt="Demo GIF">
-   <img src="specklegen/sample/flow001.png" width="550" height="275" alt="Demo Image">
+   <img src="specklegen/sample/frame001.png" width="200" height="200" alt="Demo Image">
+   <img src="specklegen/sample/flow001.png" width="520" height="260" alt="Demo Image">
 </p>
 
 ## Run Speckle Generator
