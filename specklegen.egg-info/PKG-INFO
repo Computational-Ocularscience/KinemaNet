@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: specklegen
-Version: 0.1.4
+Version: 0.1.5
 Summary: Generate sequences of random speckle patterns and defining optical flow fields.
 Home-page: https://github.com/Computational-Ocularscience/ElastoNet
 Author: Fisseha A. Ferede
@@ -22,8 +22,8 @@ covariance model to generate spatial random fields.
 ## Sample Demo
 
 <h1 align="center">
-<img src="sample_seq.gif"  width="200" height="200">
-<img src="flow001.png"  width="520" height="260">
+<img src="https://github.com/Computational-Ocularscience/ElastoNet/blob/main/docs/sample_seq.gif"  width="200" height="200">
+<img src="https://github.com/Computational-Ocularscience/ElastoNet/blob/main/docs/flow001.png"  width="520" height="260">
 </h1><br>
 
 ## Run Speckle Generator
@@ -38,7 +38,7 @@ This speckle dataset generator can be installed and used as follows:
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen==0.1.4
+pip install specklegen==0.1.5
 ```
 Usage
 
