@@ -11,8 +11,7 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 
-﻿# Speckle Dataset Generation
-[Github page](https://github.com/Computational-Ocularscience/ElastoNet)<br/>
+﻿# [Speckle Dataset Generation](https://github.com/Computational-Ocularscience/ElastoNet)<br/>
 
 ## Dataset Generation
 
@@ -22,10 +21,10 @@ covariance model to generate spatial random fields.
 
 ## Sample Demo
 
-<p align="center">
-   <img src="specklegen/sample/frame001.png" width="200" height="200" alt="Demo Image">
-   <img src="specklegen/sample/flow001.png" width="520" height="260" alt="Demo Image">
-</p>
+<h1 align="center">
+<img src="sample_seq.gif"  width="200" height="200">
+<img src="flow001.png"  width="520" height="260">
+</h1><br>
 
 ## Run Speckle Generator
 
@@ -34,12 +33,12 @@ Lastly, the `--dimensions` argument specifies the height and width of the output
 
 
 ## PyPI installation
-We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). Alternatively, this library can be installed and used as follows:
+We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.2/). Alternatively, this library can be installed and used as follows:
 
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen
+pip install specklegen==0.1.2
 ```
 Usage
 
@@ -58,7 +57,7 @@ data_generator(output_path, seq_number, seq_length, dimensions, scales)
 ```
 
 ## Output Format
-The output files which includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations, heatmap of the `u` and `v` flows.
+The output files includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations file, heatmap of the `u` and `v` flows.
 
 ```
 ├── <output_path>/
