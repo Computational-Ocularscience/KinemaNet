@@ -18,16 +18,9 @@ covariance model to generate spatial random fields.
 
 ## Run Speckle Generator
 
-There are four arguments to be specified by the user. `--output_path` defines the directory where generated image sequences, ground-truth flows and flow vizualizations will be saved.  `--seq_number` and `--seq_length` represent the number of random speckle pattern sequences to generate and the number of frames per each sequence, respectively.
-Lastly, the `--dimensions` argument specifies the height and width of the output speckle patterns. Additionally, a user can specfiy `--scales` argument that define the max `u` and `v` flow magnitudes, default value is `(10 10)`.
-```
-python synthetic_data_generator.py
-   --output_path=<output_path>
-   --seq_number=5
-   --seq_length=7
-   --dimensions 512 512
-   --scales 5 7
-```
+There are four arguments to be specified by the user. `--output_path` defines the directory where generated image sequences, ground-truth flows and flow visualizations will be saved.  `--seq_number` and `--seq_length` represent the number of random speckle pattern sequences to generate and the number of frames per each sequence, respectively.
+Lastly, the `--dimensions` argument specifies the height and width of the output speckle patterns. Optionally, a user can specify `--scales` an argument that defines the max `u` and `v` flow magnitudes, default value is `(10 10)`.
+
 
 ## PyPI installation
 We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). Alternatively, this library can be installed and used as follows:
