@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: specklegen
-Version: 0.1.1
+Version: 0.1.2
 Summary: Generate sequences of random speckle patterns and defining optical flow fields.
 Home-page: https://github.com/Computational-Ocularscience/ElastoNet
 Author: Fisseha A. Ferede
