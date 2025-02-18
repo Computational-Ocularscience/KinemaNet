@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: specklegen
-Version: 0.1.2
+Version: 0.1.1
 Summary: Generate sequences of random speckle patterns and defining optical flow fields.
 Home-page: https://github.com/Computational-Ocularscience/ElastoNet
 Author: Fisseha A. Ferede
@@ -38,7 +38,7 @@ We published this speckle data generator package on PyPI [Specklegen](https://py
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen==0.1.2
+pip install specklegen==0.1.1
 ```
 Usage
 
