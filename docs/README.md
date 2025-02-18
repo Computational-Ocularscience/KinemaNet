@@ -10,7 +10,7 @@ covariance model to generate spatial random fields.
 
 <h1 align="center">
 <img src="https://github.com/Computational-Ocularscience/ElastoNet/tree/main/docs/sample_seq.gif"  width="200" height="200">
-<img src="https://github.com/Computational-Ocularscience/ElastoNet/tree/main/docs/flow001.png"  width="520" height="260">
+<img src="https://github.com/Computational-Ocularscience/ElastoNet/blob/main/docs/flow001.png"  width="520" height="260">
 </h1><br>
 
 ## Run Speckle Generator
