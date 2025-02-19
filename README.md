@@ -13,7 +13,6 @@ Fisseha A. Ferede, Madhusudhanan Balasubramanian<br/>
 ## Speckle Dataset Generation
 
 We generate multi-frame synthetic speckle pattern image sequences and ground-truth flows that represent the underlying deformation of the sequence. Each sequence has a unique reference pattern and contains between 9,000 and 11,000 randomly generated ellipses of varying sizes, with major and minor axes ranging from 7 to 30 pixels. These ellipses are fully filled with random gray scale intensity gradients ranging from 0 to 255. 
-
 We then backward warp each unique pattern with smooth and randomly generated spatial random deformation fields to generate deforming sequences. The random deformation fields are generated using [GSTools](https://gmd.copernicus.org/articles/15/3161/2022/), a library which uses
 covariance model to generate spatial random fields. 
 
@@ -38,7 +37,7 @@ python synthetic_data_generator.py
 ```
 
 ### PyPI installation
-We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.0/). Alternatively, this library can be installed and used as follows:
+We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.6/). Alternatively, this library can be installed and used as follows:
 
 Installation
 ```
