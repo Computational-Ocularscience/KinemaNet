@@ -16,7 +16,7 @@ with open(README_PATH, "r", encoding="utf-8") as fh:
 
 setup(
     name="specklegen",
-    version="0.1.5",
+    version="0.1.6",
     author="Fisseha A. Ferede",
     author_email="fissehaad[at]gmail.com",
     description="Generate sequences of random speckle patterns and defining optical flow fields.",

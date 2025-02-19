@@ -25,7 +25,7 @@ This speckle dataset generator can be installed and used as follows:
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen==0.1.5
+pip install specklegen==0.1.6
 ```
 Usage
 
