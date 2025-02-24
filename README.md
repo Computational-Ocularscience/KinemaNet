@@ -8,8 +8,6 @@ Fisseha A. Ferede, Madhusudhanan Balasubramanian<br/>
 
 <img src="Elastonet_architecture.png">
 
-
-
 ## Speckle Dataset Generation
 
 We generate multi-frame synthetic speckle pattern image sequences and ground-truth flows that represent the underlying deformation of the sequence. Each sequence has a unique reference pattern and contains between 9,000 and 11,000 randomly generated ellipses of varying sizes, with major and minor axes ranging from 7 to 30 pixels. These ellipses are fully filled with random gray scale intensity gradients ranging from 0 to 255. 
@@ -77,6 +75,9 @@ The output files includes synthetic speckle pattern image sequences, `.flo` grou
 │   │            │              .
 │   │            │      ├──frame000n-1.png
 ```
+
+## Elastography visualization GUI
+
 
 
 ## Cite
