@@ -80,6 +80,10 @@ The output files includes synthetic speckle pattern image sequences, `.flo` grou
 
 ## IV. Evaluation
 ## V. Elastography visualization GUI
+```matlab
+	clc; clear; close all;
+	imageUploadGUI  % Launch the GUI
+```
 
 
 
