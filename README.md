@@ -4,11 +4,11 @@ This repository contains the source code for our paper:
 [ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection](https://arxiv.org/pdf/2304.14418)<br/>
 Fisseha A. Ferede, Madhusudhanan Balasubramanian<br/>
 
-## Architecture
+## I. Architecture
 
 <img src="Elastonet_architecture.png">
 
-## Speckle Dataset Generation
+## II. Speckle Dataset Generation
 
 We generate multi-frame synthetic speckle pattern image sequences and ground-truth flows that represent the underlying deformation of the sequence. Each sequence has a unique reference pattern and contains between 9,000 and 11,000 randomly generated ellipses of varying sizes, with major and minor axes ranging from 7 to 30 pixels. These ellipses are fully filled with random gray scale intensity gradients ranging from 0 to 255. 
 We then backward warp each unique pattern with smooth and randomly generated spatial random deformation fields to generate deforming sequences. The random deformation fields are generated using [GSTools](https://gmd.copernicus.org/articles/15/3161/2022/), a library which uses
