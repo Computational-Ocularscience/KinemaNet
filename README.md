@@ -76,11 +76,14 @@ The output files includes synthetic speckle pattern image sequences, `.flo` grou
 │   │            │      ├──frame000n-1.png
 ```
 
-## Elastography visualization GUI
+## III. Flow Estimation
+
+## IV. Evaluation
+## V. Elastography visualization GUI
 
 
 
-## Cite
+## VI. Cite
 
 If you find this work useful please cite:
 ```
