@@ -86,14 +86,19 @@ git clone https://github.com/Computational-Ocularscience/SSTM.git
 ## IV. Evaluation
 
 ### For Synthetic Dataset
-To compute ground truth strain estimates and visual results as well as evaluate your method (if any) run `evaluate_speckle` under eval directory:
+To compute ground truth strain estimates as well as evaluate your method (if any) run `evaluate_speckle` under eval directory:
 
 ```matlab
 clc; clear; close all;
 addpath('eval');  % Add eval directory to path
 evaluate_speckle; % Call the function
 ```
-If you're computing results using only the ground truth, set the variable method_name to 'Flow', a default path where your generated ground truth flows are located.
+If you're computing results using only the ground truth only, set the variable `method_name` to `Flow`, a default path where your generated ground truth flows are located.
+Set `save_vis_strain = true` and `save_strain = true` to save gt and/or estimated strain maps as colormaps and `.mat` files, respectively.
+
+To evaluate your flow and strain estimates (if any) of the test set, set the variable `method_name` to `my_method_name`, a path where your flow estimates are located.
+    
+
 
 ## V. Elastography Visualization GUI
 ```matlab
