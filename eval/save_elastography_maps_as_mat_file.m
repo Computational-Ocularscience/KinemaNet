@@ -8,5 +8,5 @@ function save_elastography_maps_as_mat_file(path, map, name)
     end
 
     % Construct the full filename and save the map
-    save(fullfile(path, strcat(name, '.mat')), 'map');
+    save(fullfile(path, strcat(name)), 'map');
 end
