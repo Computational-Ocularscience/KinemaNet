@@ -1,8 +1,9 @@
 function evaluate_speckle
 
     %Fisseha F., 11/16/2024
-    root = 'D:\SpeckleReportedTest'; %root directory
+    root = 'SpeckleReportedTestSample'; %root directory
     method_name = 'Flow'; %add your method name for evaluation, if not set it to 'Flow' to generate strain estimates from
+    %method_name = 'SSTM_estimates'; %Our results
     sstm_est_root = fullfile(root, method_name);%your estimates
     flow_gt_root = fullfile(root, 'Flow');
     seq_root = fullfile(root, 'Sequences');
@@ -28,14 +29,14 @@ function evaluate_speckle
     which_flow = 1; %1 for first flow estimate b/n I1 and I2, and 2 for second flowe stimate b/n I2 and I3
     rec_error = false; %compute reconstruction error b/n I1 and warped(I2, Flow)
     save_vis_strain = true; %save colormap of gt and estimated strain maps
-    save_strain = false; %save gt and estimated strain maps as .mat files
+    save_strain = true; %save gt and estimated strain maps as .mat files
 
     %strain magnitude sensitive to the following params
     sigma = 30; 
     epsilon = 1e-6; %determines kernel size
   
     % Iterate through each item in the directory
-    for i = 1:length(gt_dirs)-140
+    for i = 1:length(gt_dirs)
         seq_dir = gt_dirs(i);
         disp(string(gt_dirs(i).name));
 
@@ -114,7 +115,7 @@ function evaluate_speckle
         if save_strain
             %save gt strain estimates (based on gt flow)
             [gt_parent_path, ~, ~] = fileparts(flow_gt_root);
-            gt_strain_path = fullfile(gt_parent_path, 'Strain' ,seq_dir.name);
+            gt_strain_path = fullfile(gt_parent_path, 'Strain_GT' ,seq_dir.name);
 
             save_elastography_maps_as_mat_file(gt_strain_path, exx_gt, 'Exx.mat');
             save_elastography_maps_as_mat_file(gt_strain_path, eyy_gt, 'Eyy.mat');
