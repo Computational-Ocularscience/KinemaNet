@@ -84,6 +84,13 @@ git clone https://github.com/Computational-Ocularscience/SSTM.git
 ```
 
 ## IV. Evaluation
+To compute strain estimates and visual results on synthetic speckle dataset:
+
+```matlab
+clc; clear; close all;
+evaluate_speckle  % Under eval directory
+```
+
 ## V. Elastography Visualization GUI
 ```matlab
 clc; clear; close all;
