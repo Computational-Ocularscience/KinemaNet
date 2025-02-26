@@ -96,7 +96,7 @@ evaluate_speckle; % Call the function
 If you're computing results using only the ground truth only, set the variable `method_name` to `Flow`, a default path where your generated ground truth flows are located.
 Set `save_vis_strain = true` and `save_strain = true` to save gt and/or estimated strain maps as colormaps and `.mat` files, respectively.
 
-To evaluate your flow and strain estimates (if any) of the test set, set the variable `method_name` to `my_method_name`, a path where your flow estimates are located.
+To evaluate your flow and strain estimates (if any) of the test sepckle dataset, set the variable `method_name` to `my_method_name`, a path where your flow estimates are located.
     
 
 
