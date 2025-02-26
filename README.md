@@ -78,13 +78,17 @@ The output files includes synthetic speckle pattern image sequences, `.flo` grou
 
 ## III. Flow Estimation
 
+```bash
+# Clone SSTM repository
+git clone https://github.com/Computational-Ocularscience/SSTM.git
+```
+
 ## IV. Evaluation
 ## V. Elastography Visualization GUI
 ```matlab
 clc; clear; close all;
 imageUploadGUI  % Launch the GUI
 ```
-
 
 
 ## VI. Cite
