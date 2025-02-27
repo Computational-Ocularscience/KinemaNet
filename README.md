@@ -105,7 +105,7 @@ clc; clear; close all;
 imageUploadGUI  % Launch the GUI
 ```
 Sample demo video:
-![Demo](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/GUI/Demo%20video/Demo_Speckle_GUI.mp4)
+[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 
 ## VI. Cite
