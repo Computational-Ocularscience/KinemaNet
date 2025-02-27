@@ -167,6 +167,7 @@ function imageUploadGUI
         persistent initialKappa;
 
         if isempty(initialKappa)
+            disp('Welcome!');
             initialKappa = 15;  % Set initial kappa value only once
             kappaField.Value = initialKappa;  % Assign to UI field
         end
