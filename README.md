@@ -104,6 +104,8 @@ To evaluate your flow and strain estimates (if any) of the test sepckle dataset,
 clc; clear; close all;
 imageUploadGUI  % Launch the GUI
 ```
+Sample demo video:
+![Demo](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/GUI/Demo%20video/Demo_Speckle_GUI.mp4)
 
 
 ## VI. Cite
