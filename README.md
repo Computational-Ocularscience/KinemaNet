@@ -106,7 +106,9 @@ imageUploadGUI  % Launch the GUI
 ```
 Sample demo video:
 
-[![Demo Video](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/GUI/Demo/GUI_snapshot.png)](https://www.youtube.com/watch?v=w8ZAxRauuDA)
+<a href="https://www.youtube.com/watch?v=w8ZAxRauuDA">
+  <img src="https://github.com/Computational-Ocularscience/ElastoNet/blob/main/GUI/Demo/GUI_snapshot.png" width="400">
+</a>
 
 
 ## VI. Cite
