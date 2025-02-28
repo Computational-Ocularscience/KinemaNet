@@ -105,7 +105,7 @@ clc; clear; close all;
 imageUploadGUI  % Launch the GUI
 ```
 Sample demo video:
-[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=w8ZAxRauuDA)
+[![Demo Video](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/GUI/Demo/GUI_snapshot.png)](https://www.youtube.com/watch?v=w8ZAxRauuDA)
 
 
 ## VI. Cite
