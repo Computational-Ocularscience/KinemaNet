@@ -82,8 +82,8 @@ The output files includes synthetic speckle pattern image sequences, `.flo` grou
 # Clone SSTM repository
 git clone https://github.com/Computational-Ocularscience/SSTM.git
 conda env create -f sstm.yml
-
-python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=retinal
+conda activate sstm
+python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=speckle/sequences
 ```
 
 ## IV. Evaluation
