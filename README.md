@@ -59,7 +59,7 @@ data_generator(output_path, seq_number, seq_length, dimensions, scales)
 ```
 
 ### Output Format
-The output files includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations file, heatmap of the `u` and `v` flows.
+The output files include synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations file, heatmap of the `u` and `v` flows.
 
 ```
 ├── <output_path>/
