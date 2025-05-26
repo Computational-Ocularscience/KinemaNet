@@ -26,7 +26,7 @@ covariance model to generate spatial random fields.
 There are four arguments to be specified by the user. `--output_path` defines the directory where generated image sequences, ground-truth flows and flow vizualizations will be saved.  `--seq_number` and `--seq_length` represent the number of random speckle pattern sequences to generate and the number of frames per each sequence, respectively.
 Lastly, the `--dimensions` argument specifies the height and width of the output speckle patterns. 
 ```
-python synthetic_data_generator.py
+python specklegen\synthetic_data_generator.py
    --output_path=<output_path>
    --seq_number=5
    --seq_length=7
@@ -59,7 +59,7 @@ data_generator(output_path, seq_number, seq_length, dimensions, scales)
 ```
 
 ### Output Format
-The output files includes synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations file, heatmap of the `u` and `v` flows.
+The output files include synthetic speckle pattern image sequences, `.flo` ground truth deformation field which contains the `u` and `v` components of the flow, as well as flow visualizations file, heatmap of the `u` and `v` flows.
 
 ```
 ├── <output_path>/
