@@ -1,7 +1,7 @@
-﻿# ELASTONET
+﻿# KINEMANET
 This repository contains the source code for our paper:
 
-[ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection](https://computational-ocularscience.github.io/elastonet.github.io/)<br/>
+[KinemaNet: Kinematic Descriptors of Deformation of the ONH for Non-invasive Detection of Glaucoma Progression](https://computational-ocularscience.github.io/kinemanet.github.io/)<br/>
 Fisseha A. Ferede, Madhusudhanan Balasubramanian<br/>
 
 ## I. Architecture
@@ -102,14 +102,14 @@ Set `save_vis_strain = true` and `save_strain = true` to save gt and/or estimate
 To evaluate your flow and strain estimates (if any) of the test sepckle dataset, set the variable `method_name` to `my_method_name`, a path where your flow estimates are located.
     
 
-## V. Elastography Visualization GUI
+## V. GUI for Visualizing Kinematics
 ```matlab
 clc; clear; close all;
 imageUploadGUI  % Launch the GUI
 ```
 GUI demo video:
 
-[![Demo Video](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/GUI/Demo/GUI_snapshot.png)](https://www.youtube.com/watch?v=w8ZAxRauuDA&list=PLwsd7wXvear-qbWi7rvkdfhtEfZmVp21c&index=3)
+[![Demo Video](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/GUI/Demo/GUI_snapshot.png)](https://www.youtube.com/watch?v=w8ZAxRauuDA&list=PLwsd7wXvear-qbWi7rvkdfhtEfZmVp21c&index=3)
 
 
 ## VI. Cite
