@@ -86,7 +86,14 @@ conda activate sstm
 python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=speckle/sequences
 ```
 
-## IV. Flow Estimation
+## IV. Rubber Material Model
+
+[II. B) Rubber Material Modeling](https://computational-ocularscience.github.io/kinemanet.github.io/)
+```matlab
+clc; clear; close all;
+addpath('eval');  % Add eval directory to path
+evaluate_speckle; % Call the function
+```
 ## V. Evaluation
 
 ### For Synthetic Dataset
