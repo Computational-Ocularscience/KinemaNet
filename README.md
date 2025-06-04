@@ -88,7 +88,7 @@ python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=speckl
 
 ## IV. Rubber Material Model
 
-[Rubber Material Modeling](https://computational-ocularscience.github.io/kinemanet.github.io/#rubber-material-modeling)
+To extract kinematic descriptor outputs from the COMSOL simulation as described in the dataset section of [Rubber Material Modeling](https://computational-ocularscience.github.io/kinemanet.github.io/#rubber-material-modeling)
 
 ```matlab
 clc; clear; close all;
