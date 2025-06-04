@@ -86,7 +86,8 @@ conda activate sstm
 python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=speckle/sequences
 ```
 
-## IV. Evaluation
+## IV. Flow Estimation
+## V. Evaluation
 
 ### For Synthetic Dataset
 To compute ground truth strain estimates as well as evaluate your method (if any), run `evaluate_speckle` under eval directory:
@@ -102,7 +103,7 @@ Set `save_vis_strain = true` and `save_strain = true` to save gt and/or estimate
 To evaluate your flow and strain estimates (if any) of the test sepckle dataset, set the variable `method_name` to `my_method_name`, a path where your flow estimates are located.
     
 
-## V. GUI for Visualizing Kinematics
+## VI. GUI for Visualizing Kinematics
 ```matlab
 clc; clear; close all;
 imageUploadGUI  % Launch the GUI
@@ -112,7 +113,7 @@ GUI demo video:
 [![Demo Video](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/GUI/Demo/GUI_snapshot.png)](https://www.youtube.com/watch?v=w8ZAxRauuDA&list=PLwsd7wXvear-qbWi7rvkdfhtEfZmVp21c&index=3)
 
 
-## VI. Cite
+## VII. Cite
 
 If you find this work useful please cite:
 ```
