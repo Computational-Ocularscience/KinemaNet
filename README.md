@@ -89,6 +89,8 @@ python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=speckl
 ## IV. Rubber Material Model
 
 [II. B) Rubber Material Modeling](https://computational-ocularscience.github.io/kinemanet.github.io/)
+[Rubber Material Modeling](https://computational-ocularscience.github.io/kinemanet.github.io/#rubber-material-modeling)
+
 ```matlab
 clc; clear; close all;
 addpath('eval');  % Add eval directory to path
