@@ -88,13 +88,16 @@ python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=speckl
 
 ## IV. Rubber Material Model
 
-To extract kinematic descriptor outputs from the COMSOL simulation as described in the dataset section of [Rubber Material Modeling](https://computational-ocularscience.github.io/kinemanet.github.io/#rubber-material-modeling)
+To extract kinematic descriptor outputs from the COMSOL simulation results as described in the dataset section of [Rubber Material Modeling](https://computational-ocularscience.github.io/kinemanet.github.io/#rubber-material-modeling), clone the `fem` directory and follow the following instructions.
+This program expects `*.csv` inputs from the COMSOL which can be downloaded from [Dataset page]((https://computational-ocularscience.github.io/kinemanet.github.io/#rubber-material-modeling)) for each of the four rubber geometries.
 
 ```matlab
 clc; clear; close all;
-addpath('eval');  % Add eval directory to path
-evaluate_speckle; % Call the function
+addpath('fem');  % Add fem directory to path
+femExtractor_v1; % Call the function
 ```
+This will output kinematic descriptors `u, v, Exx, Eyy, Exy, Vorticity, Strain Magnitude` and `von Mises Strain` in `*.mat` file format and as colormaps for visualization purposes.
+
 ## V. Evaluation
 
 ### For Synthetic Dataset
