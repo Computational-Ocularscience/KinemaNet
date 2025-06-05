@@ -1,34 +1,40 @@
-function showElastographyParameter(parameter, x0, x1, y0, y1)
-    % Ensure valid coordinate values
+function showElastographyParameter(fig, parameter, x0, x1, y0, y1)
+    % Validate coordinates
     if any([x0, y0, x1, y1] < 1)
         uialert(fig, 'Error: Coordinates must be greater than or equal to 1.', 'Input Error');
         return;
     end
+
+    % Get the strain matrix from appdata
+    data = getappdata(fig, lower(parameter));
     
-    % Retrieve the corresponding strain matrix from the base workspace
-    data = evalin('base', lower(parameter)); % Convert parameter to lowercase for variable name
-    % Create a mask based on the specified coordinates
-    mask = false(size(data));
-    mask(y0:y1, x0:x1) = true; % Apply the mask to the selected region
-
-    % Apply the mask to the selected data
-    maskedData = data;
-    maskedData(~mask) = NaN; % Set non-masked values to NaN
-
-    validData = maskedData(~isnan(maskedData));
-
-    if ~isempty(validData)
-        minVal = min(validData);
-        maxVal = max(validData);
+    if isempty(data)
+        uialert(fig, ['Data "' parameter '" not available.'], 'Missing Data');
+        return;
     end
 
-    % Display the heat map for the selected elastography parameter
-    figure; % Create a new figure for the heat map
-    imagesc(maskedData'); % Display the masked data
+    % Apply mask for selected region
+    mask = false(size(data));
+    mask(y0:y1, x0:x1) = true;
+
+    maskedData = data;
+    maskedData(~mask) = NaN;
+
+    validData = maskedData(~isnan(maskedData));
+    if isempty(validData)
+        uialert(fig, 'Selected region has no valid data.', 'Empty Selection');
+        return;
+    end
+
+    minVal = min(validData);
+    maxVal = max(validData);
+
+    % Plot heatmap
+    figure;
+    imagesc(maskedData);
     caxis([minVal, maxVal]);
-    colorbar; % Add a colorbar to indicate scale
+    colorbar;
     title([parameter ' Heat Map'], 'FontSize', 12, 'FontWeight', 'bold');
-    axis off; % Set equal aspect ratio
-    colormap('jet'); % Use a color map for visualization
-    %set(gca, 'YDir', 'normal');
+    axis off;
+    colormap('jet');
 end

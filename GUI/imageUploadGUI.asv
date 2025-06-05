@@ -1,5 +1,7 @@
 function imageUploadGUI
-    clear functions;
+    %clc; 
+    %clear;
+    %close all;
     % Create the main figure window with custom title and size
     fig = uifigure('Name', 'Image Upload Interface', 'Position', [100 100 800 600], 'Color', [0.9 0.9 0.9]);
 
@@ -46,7 +48,7 @@ function imageUploadGUI
     v = [];
 
     % Initialize strain variables as persistent
-    %persistent absstrain shearstrain normalstrain vorticity vonmises uflow vflow; 
+    persistent absstrain shearstrain normalstrain vorticity vonmises uflow vflow; 
 
     % Create the upload button for images
     btnUploadImages = uibutton(fig, 'push', 'Text', 'Upload Baseline', ...
@@ -124,6 +126,14 @@ function imageUploadGUI
             lastPath = pwd; % Default to current directory
         end
 
+        % [file, path] = uigetfile({'*.flo', 'Flow Files'}, 'Select a .flo File', lastPath);
+        % if isequal(file, 0)
+        %     return; % User canceled the operation
+        % end
+        % 
+        % % Read the .flo file
+        % floPath = fullfile(path, file);
+        % [u, v] = readFloFile(floPath); % Read the flow components
         [file, path] = uigetfile({'*.flo;*.mat', 'Flow and MAT Files'}, 'Select a .flo or .mat File', lastPath);
         if isequal(file, 0)
             return; % User canceled the operation
@@ -155,15 +165,7 @@ function imageUploadGUI
     % Nested function to visualize the elastography
     function visualizeDescriptors()
         % Call the external elastography function to compute strain
-        handles = elastography();   
-    
-        if isappdata(fig, 'absolutestrain'); rmappdata(fig, 'absolutestrain'); end
-        if isappdata(fig, 'normalstrain');   rmappdata(fig, 'normalstrain'); end
-        if isappdata(fig, 'shearstrain');    rmappdata(fig, 'shearstrain'); end
-        if isappdata(fig, 'vorticity');      rmappdata(fig, 'vorticity'); end
-        if isappdata(fig, 'vonmises');       rmappdata(fig, 'vonmises'); end
-        if isappdata(fig, 'uflow');          rmappdata(fig, 'uflow'); end
-        if isappdata(fig, 'vflow');          rmappdata(fig, 'vflow'); end
+        handles = elastography();
 
         persistent initialKappa;
 
@@ -182,21 +184,16 @@ function imageUploadGUI
         k = kappaField.Value; %kernel size
         sigma = sigmaField.Value; %sigma value
 
-        uflow = u;
-        vflow = v;
-
-        [exx, eyy, exy, ~, ~, mag] = handles.strain_from_uv_flow(uflow, vflow, sigma, k);
-        [von] = handles.vonMissesCoefficient(uflow, vflow, sigma, k);
-        [w] = handles.vorticity_from_uv_flow(uflow, vflow, sigma, k);
+        [exx, eyy, exy, ~, ~, mag] = handles.strain_from_uv_flow(u, v, sigma, k);
+        [von] = handles.vonMissesCoefficient(u, v, sigma, k);
+        [w] = handles.vorticity_from_uv_flow(u, v, sigma, k);
         absstrain = mag;
         normalstrain = sqrt(exx.^2 + eyy.^2);
         shearstrain = sqrt(exy.^2 + exy.^2);
-
+        uflow = u;
+        vflow = v;
         vorticity = w;
         vonmises = von;
-
-        %if ~isempty(u) && ~isempty(v)
-
         
         % Check if the strain matrices are valid
         if ~isempty(absstrain) && ~isempty(shearstrain) && ~isempty(normalstrain) && ~isempty(u) && ~isempty(v) && ~isempty(vorticity)
@@ -235,12 +232,9 @@ function imageUploadGUI
                 'FontSize', 10, ...
                 'BackgroundColor', buttonColors{i}, ...
                 'ButtonPushedFcn', @(btn, event) showElastographyParameter(fig, buttonLabels{i}, ...
-                    getappdata(fig, 'x0Field').Value, ...
-                    getappdata(fig, 'x1Field').Value, ...
-                    getappdata(fig, 'y0Field').Value, ...
-                    getappdata(fig, 'y1Field').Value));
+  getappdata(fig, 'x0Field').Value, getappdata(fig, 'x1Field').Value, ...
+    getappdata(fig, 'y0Field').Value, getappdata(fig, 'y1Field').Value);
         end
-
     end
 
 
