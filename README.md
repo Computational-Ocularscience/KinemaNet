@@ -121,7 +121,7 @@ imageUploadGUI  % Launch the GUI
 ```
 GUI demo video:
 
-[![Demo Video](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/GUI/Demo/GUI_snapshot.png)](https://www.youtube.com/watch?v=w8ZAxRauuDA&list=PLwsd7wXvear-qbWi7rvkdfhtEfZmVp21c&index=3)
+[![Demo Video](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/GUI/Demo/GUI_snapshot.png)](https://www.youtube.com/watch?v=RYcXPL-BuvE&list=PLwsd7wXvear8K4BZcjDVmZHCgSXQ2tv6c)
 
 
 ## VII. Cite
