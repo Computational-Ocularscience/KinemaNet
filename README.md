@@ -114,7 +114,7 @@ Set `save_vis_strain = true` and `save_strain = true` to save gt and/or estimate
 To evaluate your flow and strain estimates (if any) of the test sepckle dataset, set the variable `method_name` to `my_method_name`, a path where your flow estimates are located.
     
 
-## VI. GUI for Visualizing Kinematics
+## VI. GUI for Visualizing Kinematics Descriptors 
 ```matlab
 clc; clear; close all;
 imageUploadGUI  % Launch the GUI
