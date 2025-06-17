@@ -9,20 +9,22 @@ import os
 from setuptools import setup, find_packages
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+print(BASE_DIR)
 README_PATH = os.path.join(BASE_DIR, "docs", "README.md")
+print(README_PATH)
 
 with open(README_PATH, "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="specklegen",
-    version="0.1.6",
+    version="0.1.7",
     author="Fisseha A. Ferede",
     author_email="fissehaad[at]gmail.com",
     description="Generate sequences of random speckle patterns and defining optical flow fields.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Computational-Ocularscience/ElastoNet",
+    url="https://github.com/Computational-Ocularscience/KinemaNet",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

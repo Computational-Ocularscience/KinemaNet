@@ -1,4 +1,4 @@
-﻿# [Speckle Dataset Generation](https://github.com/Computational-Ocularscience/ElastoNet)<br/>
+﻿# [Speckle Dataset Generation](https://github.com/Computational-Ocularscience/KinemaNet)<br/>
 
 ## Dataset Generation
 
@@ -10,7 +10,7 @@ covariance model to generate spatial random fields.
 
 | Speckle Pattern | Flow Visualization |
 |-----------------|-------------------|
-| ![](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/docs/sample_seq.gif?raw=true) | ![](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/docs/flow001.png?raw=true) |
+| ![](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/docs/sample_seq.gif?raw=true) | ![](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/docs/flow001.png?raw=true) |
 
 
 ## Run Speckle Generator
