@@ -1,6 +1,8 @@
 LICENSE.txt
+MANIFEST.in
 README.md
 setup.py
+docs/README.md
 specklegen/__init__.py
 specklegen/synthetic_data_generator.py
 specklegen.egg-info/PKG-INFO

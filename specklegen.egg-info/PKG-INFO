@@ -12,7 +12,7 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE.txt
 
-﻿# [Speckle Dataset Generation](https://github.com/Computational-Ocularscience/ElastoNet)<br/>
+﻿# [Speckle Dataset Generation](https://github.com/Computational-Ocularscience/KinemaNet)<br/>
 
 ## Dataset Generation
 
@@ -24,7 +24,7 @@ covariance model to generate spatial random fields.
 
 | Speckle Pattern | Flow Visualization |
 |-----------------|-------------------|
-| ![](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/docs/sample_seq.gif?raw=true) | ![](https://github.com/Computational-Ocularscience/ElastoNet/blob/main/docs/flow001.png?raw=true) |
+| ![](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/docs/sample_seq.gif?raw=true) | ![](https://github.com/Computational-Ocularscience/KinemaNet/blob/main/docs/flow001.png?raw=true) |
 
 
 ## Run Speckle Generator
@@ -39,7 +39,7 @@ This speckle dataset generator can be installed and used as follows:
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen==0.1.6
+pip install specklegen==0.1.7
 ```
 Usage
 
