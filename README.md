@@ -6,7 +6,7 @@ Fisseha A. Ferede, Madhusudhanan Balasubramanian<br/>
 
 ## I. Architecture
 
-<img src="Elastonet_architecture.png">
+<img src="Kinemanet_architecture.png">
 
 ## II. Speckle Dataset Generation
 
@@ -35,12 +35,12 @@ python specklegen\synthetic_data_generator.py
 ```
 
 ### PyPI installation
-We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.6/). Alternatively, this library can be installed and used as follows:
+We published this speckle data generator package on PyPI [Specklegen](https://pypi.org/project/specklegen/0.1.7/). Alternatively, this library can be installed and used as follows:
 
 Installation
 ```
 conda create -n specklegen_env python=3.8
-pip install specklegen==0.1.6
+pip install specklegen==0.1.7
 ```
 Usage
 
