@@ -2,7 +2,6 @@
 This repository contains the source code for our paper: Fisseha A. Ferede, Madhusudhanan Balasubramanian, [KinemaNet: Kinematic Descriptors of Deformation of the ONH for Non-invasive Detection of Glaucoma Progression](https://computational-ocularscience.github.io/kinemanet.github.io/)
 
 ## I. Architecture
-## I. Architecture
 
 <img src="Kinemanet_architecture.png">
 
