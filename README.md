@@ -41,22 +41,23 @@ conda activate sstm
 python SSTM/evaluate.py --model=checkpoints/sstm_t++-sintel.pth --dataset=speckle/sequences
 ```
 
-## III. Validation Datesets with Known Ground Truths
+## III. Validation Datasets with Known Ground Truths
 
 For evaluating the accuracy of model estimates, 1) synthetic deforming sequences were generated with known ground truth deformation fields; and 2) computational material models of deforming rubber specimen were developed where ground truth strain tensor at each material locations were available.
 
-### A. Specklegen for Synthetic Deforming Sequence Generation
+### A. *Specklegen* for Generating Synthetic Deforming Sequence
 
 We generated multi-frame synthetic speckle pattern image sequences and ground-truth flows that represent the underlying deformation of the sequence. Each sequence has a unique reference pattern and contains between 9,000 and 11,000 randomly generated ellipses of varying sizes, with major and minor axes ranging from 7 to 30 pixels. These ellipses are fully filled with random gray scale intensity gradients ranging from 0 to 255. 
 
-We then backward warp each unique pattern with smooth and randomly generated spatial random deformation fields to generate deforming sequences. The random deformation fields are generated using [GSTools](https://gmd.copernicus.org/articles/15/3161/2022/), a library which uses
-covariance model to generate spatial random fields. 
+We then backward warp each unique pattern with smooth and randomly generated spatial random deformation fields to generate deforming sequences. The random deformation fields are generated using [GSTools](https://gmd.copernicus.org/articles/15/3161/2022/), a library which uses covariance model to generate spatial random fields. 
 
 #### Sample Demo
 
 <p align="center">
-   <img src="specklegen/sample/sample_seq.gif" width="225" height="225" alt="Demo GIF">
-   <img src="specklegen/sample/flow001.png" width="550" height="275" alt="Demo Image">
+   <img src="specklegen/sample/sample_seq.gif" width="225" height="225" alt="Demo GIF"> <br>
+   a) Deforming sequence <br>
+   <img src="specklegen/sample/flow001.png" width="550" height="275" alt="Demo Image"> <br>
+   b) Components of ground truth deformation fields ($u$, $v$)<br>
 </p>
 
 #### Specklegen Installation
