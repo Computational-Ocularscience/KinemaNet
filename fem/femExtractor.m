@@ -8,7 +8,6 @@ function femExtractor(dataset_flag)
     %
     % This script extracts material modeling results from a CSV file and
     % generates strain estimates, heatmaps, and error metrics.
-    % It uses the elastography class for strain calculations.
     % Input:
     %   dataset_flag: A string indicating the dataset to process.
     %                 1 - G6M1
@@ -23,7 +22,7 @@ function femExtractor(dataset_flag)
     study_dataset = 'Rubber_Material_Model';
     dataset_names = {'G6M1', 'G7M1', 'G8M1', 'G9M1'}; % List of dataset names to process
     %
-    model_spatial_resolution = 25; % Set the spatial resolution of the model in microns
+    model_spatial_resolution = 25; % Set the spatial resolution of the model geometry, e.g. 25 pixels/mm
     crop = 20; % Set the boundary pixels to crop from the edges of the grid to remove any artifacts in the COMSOL exports
     %
     % Number of time steps and fields

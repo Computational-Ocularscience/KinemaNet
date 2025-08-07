@@ -6,7 +6,14 @@ function [gx,gy]=gaussgradient(IM,sigma, kernel_size)
 %
 %  Contributed by Guanglei Xiong (xgl99@mails.tsinghua.edu.cn)
 %  at Tsinghua University, Beijing, China.
-%determine the appropriate size of kernel. The smaller epsilon, the larger
+%
+%  Modified by:
+%   Fisseha A. Ferede
+%   Computational Ocularscience Lab, University of Memphis
+%   Changes: Input changed to accept kernel size as an argument instead of epsilon.
+%
+
+%Determine the appropriate size of kernel. The smaller epsilon, the larger
 %size.
 %epsilon=1e-2;
 % halfsize=ceil(sigma*sqrt(-2*log(sqrt(2*pi)*sigma*epsilon)));

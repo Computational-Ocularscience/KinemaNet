@@ -1,4 +1,4 @@
-function img = readFloFile(filename)
+function img = readFlowFile(filename)
 
 % readFlowFile read a flow file FILENAME into 2-band image IMG 
 

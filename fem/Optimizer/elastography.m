@@ -1,3 +1,13 @@
+% This script provides functions to compute strain and vorticity from optical flow fields.
+% It includes functions to calculate normal and shear strains, vorticity, von Mises coefficient, and maximum shear strain.
+% It is part of the elastography module in the FEM framework.
+%
+%@authors: Fisseha A. Ferede
+%Computational Ocularscience Lab,
+%The University of Memphis.
+%email: fissehaad[at]gmail.com
+%@date: October 2023
+
 function handles = elastography
     handles.strain_from_uv_flow = @strain_from_uv_flow;
     handles.vorticity_from_uv_flow = @vorticity_from_uv_flow;
@@ -6,7 +16,6 @@ function handles = elastography
 end
 
 function [exx, eyy, exy, euy, evx, mag] = strain_from_uv_flow(u, v, sigma, k_size)
-    %FF, October 2023
     %Computes normal and axial strains from optical flow fields.
     %Args:
         %u: optical flow along x
@@ -28,9 +37,6 @@ function [exx, eyy, exy, euy, evx, mag] = strain_from_uv_flow(u, v, sigma, k_siz
 end
 
 function [w] = vorticity_from_uv_flow(u, v, sigma, k_size)
-
-    %FF, October 2023
-
     %Computes normal and axial strains from optical flow fields.
     %Args:
         %u: optical flow along x
@@ -53,7 +59,6 @@ function [w] = vorticity_from_uv_flow(u, v, sigma, k_size)
 end
 
 function coff = vonMissesCoefficient(u, v, sigma, k_size)
-
     [exx, eyy, exy, ~, ~, ~] = strain_from_uv_flow(u, v, sigma, k_size);    
     coff = sqrt(exx.^2 + eyy.^2 - exx.*eyy + 3*exy.^2);
 
