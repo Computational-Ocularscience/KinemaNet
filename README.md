@@ -110,28 +110,28 @@ Specklegen generates synthetic sequences with $n$ frames stored as "frame0001.pn
 |-- <output_path>
 │         |-- Sequences
 |         |       |-- Seq 1
-|         |       |     |--frame0001.png
+|         |       |     |--frame001.png
 |         |       |     |--
 |         |       |     |--
-|         |       |     |--frame000[n].png
+|         |       |     |--frame00[n].png
 |         |       |-- Seq 2
 |         |       |     .
 |         |       |     .
 │         |-- Flow
 |         |       |-- Seq 1
-|         |       |     |--flow0001.flo
+|         |       |     |--flow001.flo
 |         |       |     |--
 |         |       |     |--
-|         |       |     |--frame000[n-1].flo
+|         |       |     |--flow00[n-1].flo
 |         |       |-- Seq 2
 |         |       |     .
 |         |       |     .
 │         |-- Flow_vis
 |         |       |-- Seq 1
-|         |       |     |--flow0001.png
+|         |       |     |--flow001.png
 |         |       |     |--
 |         |       |     |--
-|         |       |     |--frame000[n-1].png
+|         |       |     |--flow00[n-1].png
 |         |       |-- Seq 2
 |         |       |     .
 |         |       |     .
